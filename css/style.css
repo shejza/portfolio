@@ -60,6 +60,45 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes jump-jump-1 {
+  0%,
+  70% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0); }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1); } }
+
+@keyframes jump-jump-2 {
+  0%,
+  40% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0) rotate(-360deg); }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1) rotate(-360deg); } }
+
+@keyframes jump-jump-3 {
+  0%,
+  30% {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(0) rotate(-360deg);
+    border-radius: 40%; }
+  100% {
+    box-shadow: 2px 1px 20px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    border-radius: 30%; } }
+
+@keyframes jump-jump-4 {
+  0%,
+  10% {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(0) rotate(360deg); }
+  100% {
+    box-shadow: 2px 1px 20px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    border-radius: 20%; } }
+
 .divider__long {
   border: 2px solid #F8DD7D;
   animation-name: line__long;
@@ -144,6 +183,20 @@ body {
       font-size: 1.4rem;
       line-height: 19px;
       color: #9B9898; }
+  .card--video {
+    display: flex;
+    justify-content: center; }
+    .card--video .card__video {
+      height: 100%;
+      object-fit: cover;
+      background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #F8DD7D;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+      border-radius: 8px; }
+      @media only screen and (max-width: 34.5em) {
+        .card--video .card__video {
+          max-height: fit-content;
+          height: auto;
+          max-height: 130px; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -2841,6 +2894,84 @@ body {
 @media only screen and (max-width: 48em) {
   .projects2 .trm .project__content {
     margin-bottom: 2.4rem; } }
+
+.codepen--card {
+  position: relative; }
+  @media only screen and (max-width: 34.5em) {
+    .codepen--card {
+      min-height: 217.33px; } }
+
+.center {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.dot-1 {
+  position: absolute;
+  z-index: 4;
+  width: 30px;
+  height: 30px;
+  top: 95px;
+  left: 95px;
+  background: #be9fe1;
+  border-radius: 50%;
+  animation-fill-mode: both;
+  animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate; }
+  @media only screen and (max-width: 34.5em) {
+    .dot-1 {
+      width: 20px;
+      height: 20px; } }
+
+.dot-2 {
+  position: absolute;
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+  top: 80px;
+  left: 80px;
+  background: #c9b6e4;
+  border-radius: 50%;
+  animation-fill-mode: both;
+  animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate; }
+  @media only screen and (max-width: 34.5em) {
+    .dot-2 {
+      width: 50px;
+      height: 50px; } }
+
+.dot-3 {
+  position: absolute;
+  z-index: 2;
+  width: 90px;
+  height: 90px;
+  top: 65px;
+  left: 65px;
+  background: #e1ccec;
+  border-radius: 50%;
+  animation-fill-mode: both;
+  animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate; }
+  @media only screen and (max-width: 34.5em) {
+    .dot-3 {
+      width: 80px;
+      height: 80px; } }
+
+.dot-4 {
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  top: 50px;
+  left: 50px;
+  background: #f6e5f5;
+  border-radius: 50%;
+  animation-fill-mode: both;
+  animation: jump-jump-4 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate; }
+  @media only screen and (max-width: 34.5em) {
+    .dot-4 {
+      width: 110px;
+      height: 110px; } }
 
 .profile .hero__image {
   padding-top: 6rem;

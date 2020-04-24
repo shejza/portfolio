@@ -151,3 +151,96 @@
 
     }
 }
+
+// Animated card
+$bezier: cubic-bezier(.21, .98, .6, .99);
+
+.codepen--card {
+    position: relative;
+
+    @include respond(small-phone) {
+
+        min-height: 217.33px;
+    }
+}
+
+.center {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot-1 {
+    position: absolute;
+    z-index: 4;
+    width: 30px;
+    height: 30px;
+    top: 95px;
+    left: 95px;
+    background: #be9fe1;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-jump-1 2s $bezier infinite alternate;
+
+    @include respond(small-phone) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.dot-2 {
+    position: absolute;
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    top: 80px;
+    left: 80px;
+    background: #c9b6e4;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-jump-2 2s $bezier infinite alternate;
+
+    @include respond(small-phone) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.dot-3 {
+    position: absolute;
+    z-index: 2;
+    width: 90px;
+    height: 90px;
+    top: 65px;
+    left: 65px;
+    background: #e1ccec;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-jump-3 2s $bezier infinite alternate;
+
+    @include respond(small-phone) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.dot-4 {
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    left: 50px;
+    background: #f6e5f5;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-jump-4 2s $bezier infinite alternate;
+
+    @include respond(small-phone) {
+        width: 110px;
+        height: 110px;
+    }
+}
