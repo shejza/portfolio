@@ -1,0 +1,29 @@
+.divider {
+    &__long {
+        border: 2px solid $color-primary;
+        animation-name: line__long;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        width: 208px;
+    }
+
+    &__short {
+        width: 104px;
+        border: 2px solid $color-primary;
+        margin-top: 2.4rem;
+        animation-name: line__short;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+
+    &__centered {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .divider__short {
+            margin-left: 27%;
+        }
+    }
+
+}

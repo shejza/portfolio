@@ -1,0 +1,43 @@
+.hero__image {
+    padding-top: 10rem;
+    max-width: 74%;
+    padding-bottom: 9rem;
+
+    @include respond(mini-tab) {
+        max-width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+    }
+
+    &--title {
+        font-weight: 600;
+        font-size: 3.6rem;
+        line-height: 49px;
+        color: $color-darkest-gray;
+
+        @include respond(small-phone) {
+            font-size: 2.8rem;
+            line-height: 40px;
+        }
+    }
+
+    &--description {
+        margin-top: 2.4rem;
+        font-weight: 500;
+        font-size: 2.6rem;
+        line-height: 35px;
+        color: $color-dark-gray;
+
+        @include respond(small-phone) {
+            font-size: 2rem;
+        }
+    }
+
+    .smiley-face {
+        color: $color-primary;
+        animation-name: smiley__animation;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+
+    }
+}

@@ -1,0 +1,65 @@
+.navigation {
+    &__avatar {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 1.8rem;
+            color: $color-dark-gray;
+            font-weight: 500;
+            margin-left: .8rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-darker-gray;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        float: right;
+
+        @include respond(small-phone) {
+            float: left;
+            margin-top: 1.6rem;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: $color-gray;
+            font-weight: 500;
+            transition: all .3s ease-in-out;
+
+            svg {
+                display: none;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+                color: $color-darker-gray;
+            }
+
+            &:first-child {
+                margin-right: 3.4rem;
+            }
+        }
+
+        .active {
+            color: $color-darker-gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            svg {
+                display: block;
+            }
+        }
+
+    }
+
+    .col-md-6 {
+        padding: 0;
+    }
+}

@@ -1,0 +1,94 @@
+.card {
+    max-width: 600px;
+    height: 412px;
+    border-top: 4px solid $color-darkest-gray;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+    padding: 6rem 5rem;
+    display: block;
+    transition: all .3s ease-in-out;
+
+    @include respond(small-phone) {
+        padding: 4rem 3rem;
+        max-height: fit-content;
+        height: auto;
+        max-height: 218px;
+    }
+
+
+    &:hover {
+        padding: 3rem 2rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #F8DD7D;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+        border-radius: 8px;
+
+        @include respond(small-phone) {
+            max-height: fit-content;
+            height: auto;
+            max-height: 130px;
+        }
+
+    }
+
+    &--green {
+        border-color: $color-green;
+    }
+
+    &--red {
+        border-color: $color-red;
+    }
+
+    &--purple {
+        border-color: $color-purpule;
+    }
+
+    &--blue {
+        border-color: $color-blue;
+
+        &--yellow {
+            border-color: $color-yellow;
+        }
+    }
+
+    &__content {
+        margin-top: 1.6rem;
+        max-width: 600px;
+
+        &__info {
+            &--small {
+                margin-bottom: .8rem;
+                display: flex;
+                justify-content: space-between;
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    line-height: 16px;
+                    color: $color-darkest-gray;
+                }
+            }
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 22px;
+            color: $color-darkest-gray;
+            margin-bottom: .8rem;
+        }
+
+        &__description {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 19px;
+            color: $color-gray-light;
+        }
+
+    }
+}

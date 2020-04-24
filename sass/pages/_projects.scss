@@ -1,0 +1,153 @@
+.projects {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+
+    @include respond(small-phone) {
+        margin-bottom: 2.4rem;
+    }
+
+    .button__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2.4rem;
+        max-width: 600px;
+        margin-bottom: 6.8rem;
+
+        @include respond(mini-tab) {
+            margin-bottom: 2.4rem;
+        }
+
+
+    }
+
+    &__left {
+        padding-right: 2rem;
+    }
+
+    &__right {
+        padding-left: 2rem;
+    }
+
+    .row-2 {
+        @media only screen and (max-width: 767px) {
+            flex-flow: column-reverse;
+        }
+    }
+}
+
+.projects__part {
+    .projects {
+        @media only screen and (max-width: 767px) {
+            margin-top: 0;
+        }
+    }
+
+    .divider {
+        margin-top: 7rem;
+
+        @include respond(small-phone) {
+            margin-top: 5rem;
+        }
+    }
+
+    .hero__image {
+        padding-top: 1.6rem;
+    }
+
+    .hero__image--description {
+        margin-top: .8rem;
+    }
+
+    .project__content {
+        max-width: 444px;
+
+        @include respond(mini-tab) {
+            max-width: unset;
+            margin-bottom: 130px;
+        }
+
+        &--title {
+            font-weight: 600;
+            font-size: 3.6rem;
+            line-height: 49px;
+            color: $color-darkest-gray;
+
+            @include respond(small-phone) {
+                font-size: 2.8rem;
+                line-height: 40px;
+            }
+
+        }
+
+        h6 {
+            font-size: 1.4rem;
+            margin-bottom: 1.6rem;
+        }
+
+        &--description {
+            font-weight: normal;
+            font-size: 2rem;
+            line-height: 27px;
+            color: $color-gray-light;
+
+            @include respond(small-phone) {
+                font-size: 1.8rem;
+            }
+        }
+
+        &--bottom {
+            position: absolute;
+            bottom: 0;
+
+            h4 {
+                font-weight: normal;
+                font-size: 2rem;
+                line-height: 27px;
+                color: $color-gray-light;
+            }
+        }
+    }
+
+    .projects {
+        .row {
+            margin-bottom: 10rem;
+
+            @include respond(mini-tab) {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    .projects__left {
+        @include respond(mini-tab) {
+
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .contain {
+        object-fit: contain;
+    }
+}
+
+.projects3 {
+    @include respond(mini-tab) {
+        .project__content {
+            margin-bottom: 2.4rem;
+
+        }
+    }
+}
+
+.projects2 {
+    @include respond(mini-tab) {
+        .trm {
+            .project__content {
+                margin-bottom: 2.4rem;
+
+            }
+        }
+
+    }
+}

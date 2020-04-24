@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //This defines what 1rem is
+    font-size: 62.5%; // 1rem = 10px;  10px/16px = 62.5%
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding: 4rem 7rem 4rem 7rem;
+
+    @media only screen and (max-width: 1280px) {
+        padding: 4rem;
+    }
+
+    @include respond(small-phone) {
+        padding: 4rem 1rem;
+    }
+
+}
+
+.container {
+    @media only screen and (max-width: 1280px) {
+        max-width: none !important;
+    }
+
+}

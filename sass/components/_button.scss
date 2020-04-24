@@ -1,0 +1,53 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 1.6rem;
+        display: inline-block;
+        border-radius: 8px;
+        transition: all .2s;
+        position: relative;
+        font: bold 1.4rem 'Nunito';
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        font-family: inherit;
+        outline: none;
+    }
+
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba($color-primary, .1);
+
+        &::after {
+            opacity: 0;
+        }
+    }
+
+    &--primary {
+        background-color: $color-green;
+        color: white;
+    }
+
+    &--link {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 25px;
+        color: $color-green;
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.4rem;
+
+    @include respond(mini-tab) {
+        margin-bottom: 2.4rem;
+    }
+}
