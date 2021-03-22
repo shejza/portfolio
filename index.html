@@ -182,6 +182,93 @@
                 </div>
             </div>
 
+            <!-- Testimonials -->
+            <div class="testimonials">
+          
+                <h1 class="testimonials__title">Testimonials</h1>
+                
+                <div class="testimonials__container">
+                    <div class="testimonials__width" id="slide">
+                        <div class="quote showing">
+                            <h3 class="quote__qut">
+                                Shejza is a <span class="quote__qut--joy">talented developer</span>
+                                 with great communication skills. She is <span class="quote__qut--joy">a joy</span> to work with. She helped us to quickly and
+                                easily build a working mobile application from a prototype design. 
+                            </h3>
+
+                            <div class="client">
+                                <img src="https://media-exp1.licdn.com/dms/image/C5603AQHtOJmrCqd-gQ/profile-displayphoto-shrink_400_400/0/1570389774193?e=1621468800&v=beta&t=LszQGFNjvqB3Kk_erUx5E1jk7yH7xlVrB1hcQzhrykU"
+                                    class="client__image" alt="clients">
+                                <div class="client__desc">
+                                    <span class="client__name">Gavin Bintz</span>
+                                    <span class="client__country">Co-Founder and Technical Director at Swirl Creative - US</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="quote">
+                            <h3 class="quote__qut">
+                                I can approve that Shejza sent it in two days (she has got 7 days) and <span class="quote__qut--joy">the communication with her was excellent.</span> 
+                            </h3>
+                            <div class="client">
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE-Bu6gm4oRAA/profile-displayphoto-shrink_400_400/0/1516574599890?e=1621468800&v=beta&t=sjoqAE6_CHcZ86y9eJZDx-rU-m2F14V6CP7-D0NBIP8"
+                                    class="client__image" alt="clients">
+                                <div class="client__desc">
+                                    <span class="client__name">Lloyd Emelle</span>
+                                    <span class="client__country">Co-Founder & CTO PARCL Technologies Corporation - United States</span>
+                                </div>
+                            </div>
+                        </div> -->
+                       
+                        <div class="quote">
+                            <h3 class="quote__qut">
+                            I'm working for many years with Shejza, in different projects (Web, Mobile) with different technologies (Laravel,
+                            React, NodeJs, React Native etc), results have been always the same <span class="quote__qut--joy">EXCELLENT</span>. I've learn a lot from Shejza, especially
+                            how to stop celebrating one achievement in order to tackle next things. 
+                            </h3>
+                            <div class="client">
+                                <img src="https://media-exp1.licdn.com/dms/image/C5603AQETkWJfuxvlYQ/profile-displayphoto-shrink_400_400/0/1572470667136?e=1621468800&v=beta&t=ZJzVaT19zBUKLYevjT5iS3kRZM9xKm7ypmHKlPMg1Pw"
+                                    class="client__image" alt="clients">
+                                <div class="client__desc">
+                                    <span class="client__name">Veton Meqa</span>
+                                    <span class="client__country">Software Engineer - Kosovo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="quote">
+                                <h3 class="quote__qut">
+                                    I <span class="quote__qut--joy">love</span> the result and she delivered before the deadline!
+                                    <span class="quote__qut--joy">Totally recommended</span> and will do business again.
+                                </h3>
+                            
+                                <div class="client">
+                                    <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/d761d373cfadd9c6f41ba9a5b1196105-1594306433811/e94b31f0-ab06-485d-875a-ab37f4558498.jpg"
+                                        class="client__image" alt="clients">
+                                    <div class="client__desc">
+                                        <span class="client__name">jmarcosds</span>
+                                        <span class="client__country">Fiver Client - Brazil</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__btns">
+                    <span class="testimonials__btn active"></span>
+                    <!-- <span class="testimonials__btn"></span> -->
+                    <span class="testimonials__btn"></span>
+                    <span class="testimonials__btn"></span>
+                </div>
+       
+            </div>
+            <!--End of  Testimonials -->
+            <div class="divider__centered">
+                <div class="divider">
+                    <div class="divider__long"></div>
+                    <div class="divider__short"></div>
+                </div>
+            </div>
+
             <div class="footer">
                 <h1>I can help.</h1>
                 <p>I’m currently available for freelance work. <br />
@@ -219,4 +306,26 @@
     </main>
 </body>
 
+<script>
+    var slideBtn = document.querySelectorAll('.testimonials__btn');
+    var slides = document.querySelectorAll(".quote");
+    var currentSlide = 0;
+    var currentButton = 0;
+    var prevButton = -1;
+    var slideInterval = setInterval(nextSlide, 7000);
+
+    function nextSlide() {
+        slides[currentSlide].className = 'quote';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'quote showing';
+
+        currentButton = (currentButton + 1) % slideBtn.length;
+        prevButton = (prevButton + 1) % slideBtn.length;
+         if (prevButton >= slideBtn.length) {
+            prevButton = 0;
+        }
+        slideBtn[prevButton].className = 'testimonials__btn';
+        slideBtn[currentButton].className = 'testimonials__btn active';
+        }
+</script>
 </html>
