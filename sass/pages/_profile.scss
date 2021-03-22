@@ -31,6 +31,10 @@
         margin-top: 35px;
         margin-bottom: 7rem;
 
+        @include respond (small-phone) {
+            margin-bottom: 1rem;
+        }
+
         &__wrapper {
             display: flex;
             justify-content: space-between;
@@ -56,10 +60,22 @@
         .chart {
             position: relative;
 
+            .slide-right {
+                @include respond (small-phone) {
+                    max-width: 180px;
+                }
+            }
+
             &--green {
                 position: absolute;
                 top: 24px;
                 left: 184px;
+
+                @include respond (small-phone) {
+                    top: 15px;
+                    left: 135px;
+                    max-width: 125px;
+                }
             }
         }
 
