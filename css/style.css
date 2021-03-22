@@ -3156,6 +3156,9 @@ body {
 .profile .skills {
   margin-top: 35px;
   margin-bottom: 7rem; }
+  @media only screen and (max-width: 34.5em) {
+    .profile .skills {
+      margin-bottom: 1rem; } }
   .profile .skills__wrapper {
     display: flex;
     justify-content: space-between;
@@ -3173,10 +3176,18 @@ body {
       max-width: 50%; }
   .profile .skills .chart {
     position: relative; }
+    @media only screen and (max-width: 34.5em) {
+      .profile .skills .chart .slide-right {
+        max-width: 180px; } }
     .profile .skills .chart--green {
       position: absolute;
       top: 24px;
       left: 184px; }
+      @media only screen and (max-width: 34.5em) {
+        .profile .skills .chart--green {
+          top: 15px;
+          left: 135px;
+          max-width: 125px; } }
   .profile .skills__text__wrapper {
     display: flex;
     margin-bottom: 16px; }
