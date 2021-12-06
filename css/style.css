@@ -131,6 +131,12 @@ body {
     -webkit-transform: translateX(0px);
     transform: translateX(0px); } }
 
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822; }
+  to {
+    stroke-dashoffset: 0; } }
+
 .divider__long {
   border: 2px solid #F8DD7D;
   animation-name: line__long;
@@ -3137,18 +3143,27 @@ body {
   padding-top: 6rem;
   padding-bottom: 5rem; }
   .profile .hero__image .image__text__wrapper {
-    display: flex; }
+    display: flex;
+    gap: 14px; }
     @media only screen and (max-width: 48em) {
       .profile .hero__image .image__text__wrapper {
         flex-direction: column-reverse; } }
 
 .profile .avatar__image {
-  max-width: 280px;
-  height: 280px;
+  max-width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px 0px 0px 8px;
+  box-shadow: 35px -35px 0 #F8DD7D;
+  margin-right: 32px;
   border: 1px solid #F8DD7D;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  animation: slide-left 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.profile path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite; }
 
 .profile .btn--primary {
   margin-top: 3rem; }
@@ -3243,7 +3258,8 @@ body {
 .profile .hiker img {
   width: 100%;
   max-width: 284px;
-  height: 200px; }
+  height: 200px;
+  object-fit: cover; }
   @media only screen and (max-width: 34.5em) {
     .profile .hiker img {
       width: 100%;

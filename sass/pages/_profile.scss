@@ -6,6 +6,7 @@
 
         .image__text__wrapper {
             display: flex;
+            gap: 14px;
 
             @include respond(mini-tab) {
                 flex-direction: column-reverse;
@@ -14,13 +15,21 @@
     }
 
     .avatar__image {
-        max-width: 280px;
-        height: 280px;
+        max-width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 8px 0px 0px 8px;
-
+        box-shadow: 35px -35px 0 $color-yellow;
+        margin-right: 32px;
         border: 1px solid $color-yellow;
         margin-bottom: 3rem;
+        animation: slide-left 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 5s linear alternate infinite;
     }
 
     .btn--primary {
@@ -156,6 +165,7 @@
             width: 100%;
             max-width: 284px;
             height: 200px;
+            object-fit: cover;
 
             @include respond(small-phone) {
                 width: 100%;

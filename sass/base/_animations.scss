@@ -140,3 +140,13 @@
         transform: translateX(0px);
     }
 }
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 822;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
