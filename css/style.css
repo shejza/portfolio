@@ -328,7 +328,7 @@ body {
   display: none;
   transition: all 0.5s ease-in-out; }
   .quote__qut {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #bbb;
     word-spacing: 3px;
@@ -336,7 +336,7 @@ body {
     line-height: 1.6;
     border: 2px solid #e74848;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.6rem;
     position: relative;
     /* for psodo element */
     display: inline-block; }
@@ -348,8 +348,7 @@ body {
       bottom: -2px;
       left: 2rem;
       height: 2px;
-      width: 6rem;
-      background-color: #292a2b; }
+      width: 6rem; }
     .quote__qut::after {
       content: '';
       position: absolute;

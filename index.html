@@ -262,10 +262,10 @@
                 </div>
                 
                 <div class="testimonials__btns">
-                    <span class="testimonials__btn active"></span>
-                    <span class="testimonials__btn"></span>
-                    <span class="testimonials__btn"></span>
-                    <span class="testimonials__btn"></span>
+                    <span onclick="currentSlide(1)" class="testimonials__btn active"></span>
+                    <span onclick="currentSlide(2)" class="testimonials__btn"></span>
+                    <span onclick="currentSlide(3)" class="testimonials__btn"></span>
+                    <span onclick="currentSlide(4)" class="testimonials__btn"></span>
                 </div>
        
             </div>
@@ -315,25 +315,32 @@
 </body>
 
 <script>
-    var slideBtn = document.querySelectorAll('.testimonials__btn');
-    var slides = document.querySelectorAll(".quote");
-    var currentSlide = 0;
-    var currentButton = 0;
-    var prevButton = -1;
-    var slideInterval = setInterval(nextSlide, 11000);
+    var slideIndex = 1;
+    showSlides(slideIndex);
+   
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("quote");
+    var dots = document.getElementsByClassName("testimonials__btn");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
 
-    function nextSlide() {
-        slides[currentSlide].className = 'quote';
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].className = 'quote showing';
-
-        currentButton = (currentButton + 1) % slideBtn.length;
-        prevButton = (prevButton + 1) % slideBtn.length;
-         if (prevButton >= slideBtn.length) {
-            prevButton = 0;
-        }
-        slideBtn[prevButton].className = 'testimonials__btn';
-        slideBtn[currentButton].className = 'testimonials__btn active';
-        }
+    setInterval(() => {
+    slideIndex += 1;
+    showSlides(slideIndex);
+}, 5000);
 </script>
 </html>
