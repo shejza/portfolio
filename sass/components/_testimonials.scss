@@ -18,6 +18,11 @@
         }
     }
 
+    &__desc {
+        font-size: 1.5rem;
+        margin-top: 8px;
+    }
+
     &__container {
         width: $qut-width;
         height: auto;
