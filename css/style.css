@@ -2841,7 +2841,10 @@ body {
 
 .navigation__avatar {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
   .navigation__avatar span {
     font-size: 1.8rem;
     color: #7B7A7A;
