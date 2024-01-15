@@ -62,6 +62,7 @@
             }
             @include respond(small-phone) {
                  flex-direction: column;
+                list-style-type: none;
             }
             li {
                 font-size: 1.4rem;

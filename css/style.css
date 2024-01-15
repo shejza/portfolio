@@ -2992,7 +2992,8 @@ body {
         gap: 8px; } }
     @media only screen and (max-width: 34.5em) {
       .skills ul {
-        flex-direction: column; } }
+        flex-direction: column;
+        list-style-type: none; } }
     .skills ul li {
       font-size: 1.4rem;
       color: #4D4B4B; }
