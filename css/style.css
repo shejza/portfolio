@@ -165,17 +165,20 @@ body {
   border-top: 4px solid #4D4B4B;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-  padding: 6rem 5rem;
+  padding: 3rem;
   display: block;
   transition: all .3s ease-in-out; }
   @media only screen and (max-width: 34.5em) {
     .card {
-      padding: 4rem 3rem;
+      padding: 3rem;
       max-height: fit-content;
       height: auto;
       max-height: 218px; } }
   .card:hover {
-    padding: 3rem 2rem; }
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-color: #6495ED;
+    border-width: 4px; }
   .card__image {
     width: 100%;
     height: 100%;
@@ -2937,14 +2940,13 @@ body {
     margin-top: 4rem; }
 
 .hero__image {
-  padding-top: 10rem;
+  padding-top: 7rem;
   max-width: 74%;
-  padding-bottom: 9rem; }
+  padding-bottom: 2rem; }
   @media only screen and (max-width: 48em) {
     .hero__image {
       max-width: 100%;
-      padding-top: 5rem;
-      padding-bottom: 4rem; } }
+      padding-top: 5rem; } }
   .hero__image--title {
     font-weight: 600;
     font-size: 3.6rem;
@@ -2968,6 +2970,40 @@ body {
     animation-name: smiley__animation;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 4rem;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 48em) {
+    .skills {
+      gap: 8px; } }
+  @media only screen and (max-width: 34.5em) {
+    .skills {
+      flex-direction: column;
+      align-items: baseline; } }
+  .skills ul {
+    display: flex;
+    gap: 24px; }
+    @media only screen and (max-width: 48em) {
+      .skills ul {
+        gap: 8px; } }
+    @media only screen and (max-width: 34.5em) {
+      .skills ul {
+        flex-direction: column; } }
+    .skills ul li {
+      font-size: 1.4rem;
+      color: #4D4B4B; }
+  .skills__header {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #4D4B4B; }
+    @media only screen and (max-width: 34.5em) {
+      .skills__header {
+        font-size: 1.8rem;
+        line-height: 40px; } }
 
 .projects {
   margin-top: 4rem;
