@@ -1,307 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:100,300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="./images/avatar2.png">
-    <title>Shejza</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:100,300,400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="./images/avatar2.png">
+        <title>Shejza</title>
+    </head>
 
-<body>
-    <nav class="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <figure class="navigation__avatar">
-                        <div class="navigation__avatar--block">
-                            <a aria-current="page" href="index.html" aria-label="Shejza Berisha"
+    <body>
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <figure class="navigation__avatar">
+                            <div class="navigation__avatar--block">
+                                <a aria-current="page" href="index.html" aria-label="Shejza Berisha"
                                 class="navigation__link">
-                                <img src="./images/avatar2.png" class="navigation__avatar" alt="avatar">
+                                    <img src="./images/avatar2.png" class="navigation__avatar" alt="avatar">
+                                </a>
+                            </div>
+                            <figcaption class="navigation__avatar--content">
+                                <span>Shejza</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <div class="navigation__menu">
+                            <a href="index.html" class="active">My Work
+                            <svg height="8" width="8" class="circleImage">
+                                    <circle cx="2.5" cy="2.5" r="2.5" stroke-width="1" fill="#F8DD7D"></circle>
+                                </svg>
+
+                            </a>
+                            <a href="profile.html">Get to know me
+                            <svg height="8" width="8" class="circleImage">
+                                    <circle cx="2.5" cy="2.5" r="2.5" stroke-width="1" fill="#F8DD7D"></circle>
+                                </svg>
                             </a>
                         </div>
-                        <figcaption class="navigation__avatar--content"><span>Shejza</span></figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-9 col-sm-9">
-                    <div class="navigation__menu">
-                        <a href="index.html" class="active">My Work
-                            <svg height="8" width="8" class="circleImage">
-                                <circle cx="2.5" cy="2.5" r="2.5" stroke-width="1" fill="#F8DD7D"></circle>
-                            </svg>
-
-                        </a>
-                        <a href="profile.html">Get to know me
-                            <svg height="8" width="8" class="circleImage">
-                                <circle cx="2.5" cy="2.5" r="2.5" stroke-width="1" fill="#F8DD7D"></circle>
-                            </svg>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main class="main">
-        <div class="container projects__part">
+        <main class="main">
+            <div class="container projects__part">
 
-            <div class="divider">
-                <div class="divider__long"></div>
-                <div class="divider__short"></div>
-            </div>
-            <div class="hero__image">
-                <h1 class="hero__image--title">What I’ve been up to.</h1>
-                <h2 class="hero__image--description">Here’s a selection of some of recent work.</h2>
-            </div>
+                <div class="divider">
+                    <div class="divider__long"></div>
+                    <div class="divider__short"></div>
+                </div>
+                <div class="hero__image">
+                    <h1 class="hero__image--title">What I’ve been up to.</h1>
+                    <h2 class="hero__image--description">Here are some highlights of my recent work.</h2>
+                </div>
 
+                <div class="projects">
+                    <div class="row row-2">
+                        <div class="col-md-6 projects__left">
+                            <a href="https://shejza.github.io/my-youtube/" class="card card--red">
+                                <img src="./images/lottery.png" alt="work" class="card__image">
+                            </a>
+                        </div>
 
+                        <div class="col-md-6 projects__right">
+                            <div class="project__content">
+                                <h2 class="project__content--title">Lottery App</h2>
+                                <h6 class="color-red">React Js | Web3.js | Solidity</h6>
 
-            <div class="projects">
-                <div class="row">
-                    <div class="col-md-6 projects__left">
-                        <div class="project__content">
-                            <h2 class="project__content--title">My Reads</h2>
-                            <h6 class="color-red">REACT/REDUX/ HTML/SCSS</h6>
+                                <p class="project__content--description">
+                               The lottery project includes the smart contract written in Solidity, and the lottery-react project is a React application that interacts with the smart contract.
+                               <br/><br/>
+                               The Lottery smart contract allows participants to enter the lottery by sending a minimum amount of Ether. The manager can pick a random winner.
+                            </p>
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
 
-                            <p class="project__content--description">
+                                        <a href="https://github.com/shejza/lottery-app" target="_blank"
+                                        class="btn--link color-blue">View on
+                                        Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 projects__left">
+                            <div class="project__content">
+                                <h2 class="project__content--title">My Reads</h2>
+                                <h6 class="color-red">REACT/REDUX | HTML/SCSS</h6>
+
+                                <p class="project__content--description">
                                 In the MyReads project, you'll create a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. 
                                 <br/><br/>The project emphasizes using React to build the application and provides an API server and client library that you will use to persist information as you interact with the application.
                             </p>
-                            <div class="project__content--bottom">
-                                <h4>Please feel free to see how it works:</h4>
-                                <div class="btn-group">
-                                    <a href="https://my-reads-application-in-react.herokuapp.com/" target="_blank"
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
+                                        <a href="https://my-reads-application-in-react.herokuapp.com/" target="_blank"
                                         class="btn--link">View Project
                                         Live</a>
-                                    <a href="https://github.com/shejza/my-reads" target="_blank"
+                                        <a href="https://github.com/shejza/my-reads" target="_blank"
                                         class="btn--link color-blue">View on Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 projects__right">
+                            <a href="https://my-reads-application-in-react.herokuapp.com/" class="card card--purple">
+                                <img src="./images/myreads.jpg" alt="work" class="card__image">
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6 projects__right">
-                        <a href="https://my-reads-application-in-react.herokuapp.com/" class="card card--purple">
-                            <img src="./images/myreads.jpg" alt="work" class="card__image">
-                        </a>
-                    </div>
+                    <div class="row">
+                        <div class="col-md-6 projects__left">
+                            <div class="project__content">
+                                <h2 class="project__content--title">Hiking</h2>
+                                <h6 class="color-red">HTML/SCSS</h6>
 
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 projects__left">
-                        <div class="project__content">
-                            <h2 class="project__content--title">Hiking</h2>
-                            <h6 class="color-red">HTML/SCSS</h6>
-
-                            <p class="project__content--description">
+                                <p class="project__content--description">
                                 This project is about my hiking adventures, and my stories.
-                                <br />
-                                <br />
+                                <br/>
+                                    <br/>
                                 On this project I have used HTML, and SCSS, I also used BEM
                                 methodology to write more clean code. The site is fully responsive.
                             </p>
-                            <div class="project__content--bottom">
-                                <h4>Please feel free to see how it works:</h4>
-                                <div class="btn-group">
-                                    <a href="https://shejza.github.io/hiking.github.io/" target="_blank"
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
+                                        <a href="https://shejza.github.io/hiking.github.io/" target="_blank"
                                         class="btn--link">View Project
                                         Live</a>
-                                    <a href="https://github.com/shejza/hiking.github.io" target="_blank"
+                                        <a href="https://github.com/shejza/hiking.github.io" target="_blank"
                                         class="btn--link color-blue">View on Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 projects__right">
+                            <a href="https://shejza.github.io/hiking.github.io/" class="card card--green">
+                                <img src="./images/img1.jpg" alt="work" class="card__image">
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6 projects__right">
-                        <a href="https://shejza.github.io/hiking.github.io/" class="card card--green">
-                            <img src="./images/img1.jpg" alt="work" class="card__image">
-                        </a>
-                    </div>
+                    <div class="row row-2">
+                        <div class="col-md-6 projects__left">
+                            <a href="https://shejza.github.io/my-youtube/" class="card card--red">
+                                <img src="./images/img4.jpg" alt="work" class="card__image">
+                            </a>
+                        </div>
 
-                </div>
+                        <div class="col-md-6 projects__right">
+                            <div class="project__content">
+                                <h2 class="project__content--title">Mini YouTube</h2>
+                                <h6 class="color-red">React Js</h6>
 
-                <div class="row row-2">
-                    <div class="col-md-6 projects__left">
-                        <a href="https://shejza.github.io/my-youtube/" class="card card--red">
-                            <img src="./images/img4.jpg" alt="work" class="card__image">
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 projects__right">
-                        <div class="project__content">
-                            <h2 class="project__content--title">Mini YouTube</h2>
-                            <h6 class="color-red">React Js</h6>
-
-                            <p class="project__content--description">
+                                <p class="project__content--description">
                                 This is a mini youtube project, to have access to youtube videos I have used API of
-                                youtube.<br /> <br />The focus for this project
+                                youtube.<br/>
+                                    <br/>The focus for this project
                                 was on React Js, how to get data from API and how to use them.
                             </p>
-                            <div class="project__content--bottom">
-                                <h4>Please feel free to see how it works:</h4>
-                                <div class="btn-group">
-                                    <a href="https://shejza.github.io/my-youtube/" target="_blank"
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
+                                        <a href="https://shejza.github.io/my-youtube/" target="_blank"
                                         class="btn--link">View Project
                                         Live</a>
-                                    <a href="https://github.com/shejza/my-youtube" target="_blank"
+                                        <a href="https://github.com/shejza/my-youtube" target="_blank"
                                         class="btn--link color-blue">View on
                                         Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                </div>
+                    <div class="row">
+                        <div class="col-md-6 projects__left">
+                            <div class="project__content">
+                                <h2 class="project__content--title">Search Photos</h2>
+                                <h6 class="color-red">React Js</h6>
 
-                <div class="row">
-                    <div class="col-md-6 projects__left">
-                        <div class="project__content">
-                            <h2 class="project__content--title">Search Photos</h2>
-                            <h6 class="color-red">React Js</h6>
-
-                            <p class="project__content--description">
+                                <p class="project__content--description">
                                 This project is created with React, here I am using unsplash API to get photos depending
                                 on what I am searching
                             </p>
-                            <div class="project__content--bottom">
-                                <h4>Please feel free to see how it works:</h4>
-                                <div class="btn-group">
-                                    <a href="https://shejza.github.io/pic-search-app/" target="_blank"
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
+                                        <a href="https://shejza.github.io/pic-search-app/" target="_blank"
                                         class="btn--link">View Project
                                         Live</a>
-                                    <a href="https://github.com/shejza/pic-search-app" target="_blank"
+                                        <a href="https://github.com/shejza/pic-search-app" target="_blank"
                                         class="btn--link color-blue">View on Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 projects__right">
+                            <a href="https://shejza.github.io/pic-search-app/" class="card card--purple">
+                                <img src="./images/img5.jpg" alt="work" class="card__image">
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6 projects__right">
-                        <a href="https://shejza.github.io/pic-search-app/" class="card card--purple">
-                            <img src="./images/img5.jpg" alt="work" class="card__image">
-                        </a>
-                    </div>
+                    <div class="row row-2">
+                        <div class="col-md-6 projects__left">
+                            <a href="https://pizzayummyy.herokuapp.com/" class="card card--black">
+                                <img src="./images/pizza.jpg" alt="pizza" class="card__image">
+                            </a>
+                        </div>
 
-                </div>
+                        <div class="col-md-6 projects__right">
+                            <div class="project__content">
+                                <h2 class="project__content--title">The Yummi Pizza</h2>
+                                <h6 class="color-red">React Js, Laravel</h6>
 
-                <div class="row row-2">
-                    <div class="col-md-6 projects__left">
-                        <a href="https://pizzayummyy.herokuapp.com/" class="card card--black">
-                            <img src="./images/pizza.jpg" alt="pizza" class="card__image">
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 projects__right">
-                        <div class="project__content">
-                            <h2 class="project__content--title">The Yummi Pizza</h2>
-                            <h6 class="color-red">React Js, Laravel</h6>
-
-                            <p class="project__content--description">
+                                <p class="project__content--description">
                                 The yummi pizza is a web application for ordering pizzas online, clients are able to
                                 order from menu which contains 8
                                 pizzas, and a shopping cart. Clients can order single or several pizzas.
-                                <br />
+                                <br/>
                                 The backend I created with Laravel and it is in separated folder from front end, and the
                                 front end part
-                                I created with React and Redux. <br />
+                                I created with React and Redux. <br/>
                                 Deployment of the application: Heroku
                             </p>
-                            <div class="project__content--bottom">
-                                <h4>Please feel free to see how it works:</h4>
-                                <div class="btn-group">
-                                    <a href="https://pizzayummyy.herokuapp.com/" target="_blank" class="btn--link">View
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
+                                        <a href="https://pizzayummyy.herokuapp.com/" target="_blank" class="btn--link">View
                                         Project
                                         Live</a>
-                                    <a href="https://github.com/shejza/pizza-api" target="_blank"
+                                        <a href="https://github.com/shejza/pizza-api" target="_blank"
                                         class="btn--link color-blue">View on
                                         Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                </div>
+                    <div class="row">
+                        <div class="col-md-6 projects__left">
+                            <div class="project__content">
+                                <h2 class="project__content--title">Take Notes</h2>
+                                <h6 class="color-red">React Js, Laravel</h6>
 
-                <div class="row">
-                    <div class="col-md-6 projects__left">
-                        <div class="project__content">
-                            <h2 class="project__content--title">Take Notes</h2>
-                            <h6 class="color-red">React Js, Laravel</h6>
-
-                            <p class="project__content--description">
+                                <p class="project__content--description">
                                 On this project you can register and login, you can save your notes,
                                 for each note you can add multiple descriptions. You can mark it as finished,
                                 you can also mark all as finished.
                                 The backend I created with Laravel and it is in separated folder from front end, and the
                                 front end part
-                                I created with React and Redux. <br />
-                            </p>
-                            <div class="project__content--bottom">
-                                <h4>Please feel free to see how it works:</h4>
-                                <div class="btn-group">
-                                    <a href="#" target="_blank" class="btn--link">View Project
+                                I created with React and Redux. <br/>
+                                </p>
+                                <div class="project__content--bottom">
+                                    <h4>Please feel free to see how it works:</h4>
+                                    <div class="btn-group">
+                                        <a href="#" target="_blank" class="btn--link">View Project
                                         Live</a>
-                                    <a href="#" target="_blank" class="btn--link color-blue">View
+                                        <a href="#" target="_blank" class="btn--link color-blue">View
                                         on Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 projects__right">
+                            <a href="https://shejza.github.io/pic-search-app/" class="card card--blue">
+                                <img src="./images/todo.jpg" alt="work" class="card__image">
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6 projects__right">
-                        <a href="https://shejza.github.io/pic-search-app/" class="card card--blue">
-                            <img src="./images/todo.jpg" alt="work" class="card__image">
-                        </a>
+                    <div class="divider__centered">
+                        <div class="divider">
+                            <div class="divider__long"></div>
+                            <div class="divider__short"></div>
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="divider__centered">
-                    <div class="divider">
-                        <div class="divider__long"></div>
-                        <div class="divider__short"></div>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <h1>I can help.</h1>
-                    <p>I’m currently available for freelance work. <br />
+                    <div class="footer">
+                        <h1>I can help.</h1>
+                        <p>I’m currently available for freelance work. <br/>
                         If you have a project that you want to get started,
                         think you
                         need my help
-                        with something or <br /> just fancy saying hey, then get in touch.</p>
-                    <div class="wrapper__email">
-                        <h3><img src="images/icons/email.svg" alt="email-icons">shejzaberisha@gmail.com</h3>
-                    </div>
+                        with something or <br/> just fancy saying hey, then get in touch.</p>
+                        <div class="wrapper__email">
+                            <h3><img src="images/icons/email.svg" alt="email-icons">shejzaberisha@gmail.com</h3>
+                        </div>
 
-                    <div class="social__wrapper">
-                        <a href="https://www.linkedin.com/in/shejza-berisha-514972a0/" target="_blank">
-                            <img src="./images/icons/linkedin.svg" alt="linkedin" />
-                        </a>
-                        <a href="https://github.com/shejza" target="_blank">
-                            <img src="./images/icons/github.svg" alt="github" />
-                        </a>
-                        <a href="https://twitter.com/ShejzaBerisha" target="_blank">
-                            <img src="./images/icons/twitter.svg" alt="twitter" />
-                        </a>
-                        <a href="https://www.instagram.com/shejza/" target="_blank">
-                            <img src="./images/icons/instagram.svg" alt="instagram" />
-                        </a>
-                        <a href="https://www.facebook.com/shejza.berisha" target="_blank">
-                            <img src="./images/icons/facebook.svg" alt="facebook" />
-                        </a>
-                    </div>
-                    <span class="copyright">
+                        <div class="social__wrapper">
+                            <a href="https://www.linkedin.com/in/shejza-berisha-514972a0/" target="_blank">
+                                <img src="./images/icons/linkedin.svg" alt="linkedin"/>
+                            </a>
+                            <a href="https://github.com/shejza" target="_blank">
+                                <img src="./images/icons/github.svg" alt="github"/>
+                            </a>
+                            <a href="https://twitter.com/ShejzaBerisha" target="_blank">
+                                <img src="./images/icons/twitter.svg" alt="twitter"/>
+                            </a>
+                            <a href="https://www.instagram.com/shejza/" target="_blank">
+                                <img src="./images/icons/instagram.svg" alt="instagram"/>
+                            </a>
+                            <a href="https://www.facebook.com/shejza.berisha" target="_blank">
+                                <img src="./images/icons/facebook.svg" alt="facebook"/>
+                            </a>
+                        </div>
+                        <span class="copyright">
                         Designed and built with <span class="color-yellow">❤ </span> by Shejza Berisha © 2020
                     </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 
 </html>
